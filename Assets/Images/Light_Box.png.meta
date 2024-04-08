@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31dfdb5a8a9c8ca4fad3b651b4536945
-      internalID: -105773049
+      spriteID: 3b8573b1214daf24c9627852b1ad30b9
+      internalID: 440114594
       vertices: []
       indices: 
       edges: []
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a31f00d4ebb4d6d4bbf573eb65b3d3f2
-      internalID: 1205037037
+      spriteID: c585ee31c8b34604dbe64f5e7d37f687
+      internalID: 331150126
       vertices: []
       indices: 
       edges: []
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75365c3274d3a714fae30d06024a30d4
-      internalID: 447886679
+      spriteID: 00b3545a6446b02419ca92424eb972b0
+      internalID: 676720887
       vertices: []
       indices: 
       edges: []
@@ -182,35 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 799dd759d57a024439c5494d352cf09c
-      internalID: -1609989798
+      spriteID: 8002c58ff5966a54eb5f7b4b1b5b6fe2
+      internalID: -1767606464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: Light_Box_4
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba553455a049da449b243799eb8e1e33
-      internalID: -1074806970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Light_Box_5
       rect:
         serializedVersion: 2
         x: 64
@@ -224,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c9f10368473cc841810c69a748a8160
-      internalID: -734961145
+      spriteID: 3793394dad9abf54a9f68a421817e7eb
+      internalID: -400129130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_Box_6
+      name: Light_Box_5
       rect:
         serializedVersion: 2
         x: 32
@@ -245,14 +224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b047c148aa857940a0841117016d618
-      internalID: -1772171866
+      spriteID: 18e2e7e84d3b50d42a33b982e47af5e3
+      internalID: 1818065205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_Box_7
+      name: Light_Box_6
       rect:
         serializedVersion: 2
         x: 48
@@ -266,14 +245,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b0a7d38c432b2a4bab60bb31c6b78f1
-      internalID: 1394451851
+      spriteID: 6f6a16bbd37784f469bfc8be7d28561c
+      internalID: 865580522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_Box_8
+      name: Light_Box_7
       rect:
         serializedVersion: 2
         x: 64
@@ -287,8 +266,239 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfca73ca6cf190f46969b980c209eec6
-      internalID: -102904901
+      spriteID: 390211075ff583047a5d31b98e6cfb17
+      internalID: 1965298161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light_Box_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b4ae851dba6c14cad49be983950f24
+      internalID: -939134510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light_Box_9
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1135f4d161ab4f4d8ddf850bb5795a2
+      internalID: -141278871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light_Box_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc1d71d639ebee4eb3ad125c818813b
+      internalID: 1283453402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light_Box_11
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0096ae15edaca8040986e830f41b64e1
+      internalID: 1453081489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light_Box_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b790e4c19de8a4ea21c0dd64e6cfc2
+      internalID: -1371554593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light_Box_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc69c506f309724bb97c005b2b08612
+      internalID: 99938183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light_Box_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff51714656b0104ab80ab8abbc6bf1b
+      internalID: -1298216839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light_Box_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c54a8ab93a442048abfb115a41cc2a8
+      internalID: 1254819478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light_Box_16
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8bb98978feed044d91f600d5ba5de95
+      internalID: -503503910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light_Box_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c1b63515288774a9a131bee589c4ed
+      internalID: -2026147068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light_Box_18
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5623cd27a5a5c4aaca047440222bbf
+      internalID: 1315847886
       vertices: []
       indices: 
       edges: []
@@ -304,15 +514,25 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Light_Box_0: -105773049
-      Light_Box_1: 1205037037
-      Light_Box_2: 447886679
-      Light_Box_3: -1609989798
-      Light_Box_4: -1074806970
-      Light_Box_5: -734961145
-      Light_Box_6: -1772171866
-      Light_Box_7: 1394451851
-      Light_Box_8: -102904901
+      Light_Box_0: 440114594
+      Light_Box_1: 331150126
+      Light_Box_10: 1283453402
+      Light_Box_11: 1453081489
+      Light_Box_12: -1371554593
+      Light_Box_13: 99938183
+      Light_Box_14: -1298216839
+      Light_Box_15: 1254819478
+      Light_Box_16: -503503910
+      Light_Box_17: -2026147068
+      Light_Box_18: 1315847886
+      Light_Box_2: 676720887
+      Light_Box_3: -1767606464
+      Light_Box_4: -400129130
+      Light_Box_5: 1818065205
+      Light_Box_6: 865580522
+      Light_Box_7: 1965298161
+      Light_Box_8: -939134510
+      Light_Box_9: -141278871
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
