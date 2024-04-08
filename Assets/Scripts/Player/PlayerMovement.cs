@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _jumpPower = 12f;
     [SerializeField] private float _poundPower = 10f;
     [SerializeField] private float _speed = 8f;
- 
+
     [Header("Objects")]
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private Transform _floorCheck;
@@ -22,12 +22,6 @@ public class PlayerMovement : MonoBehaviour
     {
         _horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (_poundPower > 0)
-        {
-            _poundPower = -_poundPower;
-        }
-
-        HandlePound();
         HandleJump();
         FlipPlayer();
     }
@@ -40,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     // Jump
     private void HandleJump()
     {
-        
+
         if (Input.GetButtonDown("Jump") && IsGrounded() && _canJump)
         {
             _rb.velocity = new Vector3(_rb.velocity.x, _jumpPower);
@@ -52,24 +46,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    // Ground Pound
-    private void HandlePound()
-    {
-        if (_poundPower > 0)
-        {
-            _poundPower = -_poundPower;
-        }
-
-        if (_poundPower == 0)
-        {
-            _poundPower = -1f;
-        }
-        
-        if (!IsGrounded() && Input.GetAxisRaw("Vertical") < 0)
-        {
-            _rb.velocity = new Vector3(_rb.velocity.x, _poundPower);
-        }
-    }
 
     // Is the player on the ground
     private bool IsGrounded()

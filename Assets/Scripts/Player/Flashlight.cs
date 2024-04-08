@@ -15,6 +15,7 @@ public class Flashlight : MonoBehaviour
     private void Awake()
     {
         _blackLevel.SetActive(false);
+        _playerCam.backgroundColor = Color.black;
     }
 
     void Update()
@@ -31,8 +32,6 @@ public class Flashlight : MonoBehaviour
                 _whiteLevel.SetActive(false);
                 _blackLevel.SetActive(true);
 
-                _playerCam.backgroundColor = Color.black;
-
                 _whiteActivated = false;
                 _blackActivated = true;
             }
@@ -40,8 +39,6 @@ public class Flashlight : MonoBehaviour
             {
                 _whiteLevel.SetActive(true);
                 _blackLevel.SetActive(false);
-
-                _playerCam.backgroundColor = Color.white;
 
                 _whiteActivated = true;
                 _blackActivated = false;
