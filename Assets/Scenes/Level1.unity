@@ -148,13 +148,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112988241}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -30.786816, y: 3.5491376, z: 0.7721604}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1814586966}
-  m_Father: {fileID: 1184679949}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &112988243
 Grid:
@@ -474,7 +474,7 @@ GameObject:
   - component: {fileID: 916476457}
   - component: {fileID: 916476456}
   - component: {fileID: 916476455}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: WallJump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -817,9 +817,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1585921980}
-  - {fileID: 112988242}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1439539153
 GameObject:
@@ -2051,7 +2050,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 26
-      m_TileSpriteIndex: 16
+      m_TileSpriteIndex: 17
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -3900,10 +3899,10 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: -141278871, guid: 640f3c652f5657b44accf53648853709, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -141278871, guid: 640f3c652f5657b44accf53648853709, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 440114594, guid: 640f3c652f5657b44accf53648853709, type: 3}
   - m_RefCount: 85
