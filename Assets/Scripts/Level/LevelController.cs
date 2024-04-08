@@ -8,20 +8,19 @@ public class LevelController : MonoBehaviour
     [SerializeField] private List<GameObject> DisabledInputs;
 
     public bool flashlightDisabled = true;
+    private GameObject player;
 
     private Vector2 startPos;
 
     private void Awake()
     {
-        startPos = transform.position;
+        player = GameObject.FindWithTag("player");
+        startPos = player.transform.position;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == 9)
-        {
-            transform.position = startPos;
-        }
+        player.transform.position = startPos;
     }
 
     // Start is called before the first frame update

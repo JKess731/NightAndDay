@@ -1593,7 +1593,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5219753430425294560, guid: 9183201fe472a4544bf4a2a72cd725d4, type: 3}
       propertyPath: scene
-      value: Level1
+      value: End Screen
       objectReference: {fileID: 0}
     - target: {fileID: 5219753430425294561, guid: 9183201fe472a4544bf4a2a72cd725d4, type: 3}
       propertyPath: m_RootOrder
