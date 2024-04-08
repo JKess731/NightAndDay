@@ -12,7 +12,10 @@ public class PlayerMovement : MonoBehaviour
     [Header("Objects")]
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private Transform _floorCheck;
+    [SerializeField] private Transform _rightWallCheck;
+    [SerializeField] private Transform _leftWallCheck;
     [SerializeField] private LayerMask _floorLayer;
+    [SerializeField] private LayerMask _jumpWallLayer;
 
     private float _horizontal;
     private bool _canJump = true;
@@ -53,6 +56,12 @@ public class PlayerMovement : MonoBehaviour
         return Physics2D.OverlapCircle(_floorCheck.position, 0.2f, _floorLayer);
     }
 
+    private bool IsAgainstWall()
+    {
+        return Physics2D.OverlapBox(_rightWallCheck.position, new Vector2(.1f, 1f), 360) ||
+            Physics2D.OverlapBox(_leftWallCheck.position, new Vector2(.1f, 1f), 360);
+    }
+
     // Flip the Direction
     private void FlipPlayer()
     {
@@ -68,7 +77,8 @@ public class PlayerMovement : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawSphere(_floorCheck.position, .2f
-            );
+        Gizmos.DrawSphere(_floorCheck.position, .2f);
+        Gizmos.DrawCube(_rightWallCheck.position, new Vector3(.1f, 1f));
+        Gizmos.DrawCube(_leftWallCheck.position, new Vector3(.1f, 1f));
     }
 }
