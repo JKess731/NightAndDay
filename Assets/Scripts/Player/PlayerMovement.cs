@@ -54,7 +54,8 @@ public class PlayerMovement : MonoBehaviour
     {
 
         if (Input.GetButtonDown("Jump") && IsGrounded() && _canJump
-            || Input.GetButtonDown("Jump") && IsAgainstWall() && _canJump)
+            || Input.GetButtonDown("Jump") && IsAgainstWall() && _canJump
+            || Input.GetButtonDown("Jump") && _canJump)
         {
             _jumpCount--;
             _rb.velocity = new Vector3(_rb.velocity.x, _jumpPower);
