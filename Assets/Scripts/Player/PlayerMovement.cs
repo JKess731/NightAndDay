@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Attributes")]
     [SerializeField] private float _jumpPower = 12f;
     [SerializeField] private float _poundPower = 10f;
+    [SerializeField] private int _jumpCount = 2;
     [SerializeField] private float _speed = 8f;
 
     [Header("Objects")]
@@ -25,6 +26,11 @@ public class PlayerMovement : MonoBehaviour
     {
         _horizontal = Input.GetAxisRaw("Horizontal");
 
+        if (_jumpCount <= 0)
+        {
+            _canJump = false;
+        }
+
         HandleJump();
         FlipPlayer();
     }
@@ -34,12 +40,23 @@ public class PlayerMovement : MonoBehaviour
         _rb.velocity = new Vector2(_horizontal * _speed, _rb.velocity.y);
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 6)
+        {
+            _canJump = true;
+            _jumpCount = 2;
+        }
+    }
+
     // Jump
     private void HandleJump()
     {
 
-        if (Input.GetButtonDown("Jump") && IsGrounded() && _canJump)
+        if (Input.GetButtonDown("Jump") && IsGrounded() && _canJump
+            || Input.GetButtonDown("Jump") && IsAgainstWall() && _canJump)
         {
+            _jumpCount--;
             _rb.velocity = new Vector3(_rb.velocity.x, _jumpPower);
         }
 
@@ -50,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    // Is the player on the ground
+    #region checks
     private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(_floorCheck.position, 0.2f, _floorLayer);
@@ -58,8 +75,8 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsAgainstWall()
     {
-        return Physics2D.OverlapBox(_rightWallCheck.position, new Vector2(.1f, 1f), 360) ||
-            Physics2D.OverlapBox(_leftWallCheck.position, new Vector2(.1f, 1f), 360);
+        return Physics2D.OverlapBox(_rightWallCheck.position, new Vector2(.1f, 1f), 360, _jumpWallLayer) ||
+            Physics2D.OverlapBox(_leftWallCheck.position, new Vector2(.1f, 1f), 360, _jumpWallLayer);
     }
 
     // Flip the Direction
@@ -73,6 +90,7 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = localScale;
         }
     }
+    #endregion
 
     private void OnDrawGizmos()
     {
