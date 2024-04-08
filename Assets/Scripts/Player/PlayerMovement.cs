@@ -47,6 +47,12 @@ public class PlayerMovement : MonoBehaviour
             _canJump = true;
             _jumpCount = 2;
         }
+
+        if (collision.gameObject.layer == 8)
+        {
+            _canJump = true;
+            _jumpCount = 1;
+        }
     }
 
     // Jump
