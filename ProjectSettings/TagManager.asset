@@ -51,6 +51,9 @@ TagManager:
   - name: Player
     uniqueID: 1321115499
     locked: 0
+  - name: Walls
+    uniqueID: 4121037971
+    locked: 0
   - name: Lights
     uniqueID: 1216256633
     locked: 0
