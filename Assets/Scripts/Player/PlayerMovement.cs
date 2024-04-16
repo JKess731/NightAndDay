@@ -17,10 +17,18 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform _leftWallCheck;
     [SerializeField] private LayerMask _floorLayer;
     [SerializeField] private LayerMask _jumpWallLayer;
+    [SerializeField] private GameObject _audioManagerObj;
+
+    private AudioManager _audio;
 
     private float _horizontal;
     private bool _canJump = true;
     private bool _isFacingRight = true;
+
+    private void Start()
+    {
+        _audio = _audioManagerObj.GetComponent<AudioManager>();
+    }
 
     void Update()
     {
@@ -63,6 +71,8 @@ public class PlayerMovement : MonoBehaviour
             || Input.GetButtonDown("Jump") && IsAgainstWall() && _canJump
             || Input.GetButtonDown("Jump") && _canJump)
         {
+            _audio.sfxSource.clip = _audio.jump;
+            _audio.sfxSource.Play();
             _jumpCount--;
             _rb.velocity = new Vector3(_rb.velocity.x, _jumpPower);
         }

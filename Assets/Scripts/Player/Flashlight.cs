@@ -8,6 +8,9 @@ public class Flashlight : MonoBehaviour
     [SerializeField] private Camera _playerCam;
     [SerializeField] private GameObject _whiteLevel;
     [SerializeField] private GameObject _blackLevel;
+    [SerializeField] private GameObject _audioManagerObj;
+
+    private AudioManager _audio;
 
     private bool _whiteActivated = true;
     private bool _blackActivated = false;
@@ -16,6 +19,11 @@ public class Flashlight : MonoBehaviour
     {
         _blackLevel.SetActive(false);
         _playerCam.backgroundColor = Color.black;
+    }
+
+    private void Start()
+    {
+        _audio = _audioManagerObj.GetComponent<AudioManager>();
     }
 
     void Update()
@@ -34,6 +42,9 @@ public class Flashlight : MonoBehaviour
 
                 _whiteActivated = false;
                 _blackActivated = true;
+                _audio.isDay = true;
+                _audio.sfxSource.clip = _audio.switchDay;
+                _audio.sfxSource.Play();
             }
             else
             {
@@ -42,6 +53,9 @@ public class Flashlight : MonoBehaviour
 
                 _whiteActivated = true;
                 _blackActivated = false;
+                _audio.isDay = false;
+                _audio.sfxSource.clip = _audio.switchNight;
+                _audio.sfxSource.Play();
             }
         }
     }
